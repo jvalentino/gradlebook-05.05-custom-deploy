@@ -1,0 +1,10 @@
+foo:
+ host: localhost
+ username: alpha
+ password: bravo
+ targetDir: /Users/testuser/demo
+ deployFile: build/libs/demo-*.jar
+ shutdownUrl: http://localhost:8080/shutdown
+ healthUrl: http://localhost:8080/health
+ startCommand: java -jar -Dspring.profiles.active=dev demo-*.jar
+ 
